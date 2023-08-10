@@ -6,11 +6,20 @@
     //Apresente a lista antiga de SUVs e a nova lista, após a adição do veículo solicitado.
 
     //ENTRADA
-
+    const carroAdc = prompt("Tiggo, Sportage, Tucson, EcoSport. Qual carro deseja ADICIONAR na lista?").toLowerCase();
+    const carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
 
     //PROCESSAMENTO
-
-
+    if (!isNaN(carroAdc)){
+        alert("Resposta invalida!")
+        stop
+    }
+    else{
+        const carroAntigo = carrosSUV.join(", ")
+        carrosSUV.push(carroAdc)
+    }
+    
     //SAÍDA
+    alert(`Lista antiga: ${carroAntigo}.\nLista nova: ${carrosSUV.join(", ")}.`)
 
 </script>
